@@ -66,10 +66,6 @@ The project is organized into several directories:
 
 4. **Model Training and Evaluation**: Use the `model_evaluation.ipynb` notebook to evaluate the pre-trained model or train a new one on the processed data.
 
-5. **Model Deployment**: The project includes a Streamlit app (`streamlit_app.py`) for deploying the model. You can run the app locally using:
-   ```bash
-   streamlit run scr/streamlit_app.py
-   ```
 
 ## Usage
 
