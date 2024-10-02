@@ -58,17 +58,17 @@ The project is organized into several directories:
 ## Setup Instructions
 
 1. **Install Dependencies**: Use the provided environment.yml file to create a conda environment with the necessary dependencies:
-   
+```   
 bash
    conda env create -f scr/environment.yml
-   conda activate tcga_ml
-
+   conda activate JupyterLab
+```
 
 2. **Data Download**: Run the get_data.sh script to download the data from GDC using the gdc-client:
-   
+ ```  
 bash
    bash scr/get_data.sh
-
+```
 
 3. **Data Preprocessing**: Run the preprocess_data_labels.ipynb notebook to process raw gene expression data and generate labels for classification.
 
