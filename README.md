@@ -59,14 +59,12 @@ The project is organized into several directories:
 
 1. **Install Dependencies**: Use the provided environment.yml file to create a conda environment with the necessary dependencies:
 ```   
-bash
    conda env create -f scr/environment.yml
    conda activate JupyterLab
 ```
 
 2. **Data Download**: Run the get_data.sh script to download the data from GDC using the gdc-client:
  ```  
-bash
    bash scr/get_data.sh
 ```
 
