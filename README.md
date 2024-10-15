@@ -39,8 +39,9 @@ The project is organized into several directories:
 
 2. **Model Training and Evaluation**:
    - **Random Forest**: A Random Forest classifier is trained, and feature importance is visualized.
-   - **XGBoost Classifier**: An XGBoost model is also trained, showing slightly better performance than Random Forest, although both models struggle distinguishing between "Oligodendroglioma" and "Astrocytoma".
-   - Models are evaluated using cross-validation and AUC-ROC scores.
+   - **XGBoost Classifier**: An XGBoost model is also trained, showing slightly better performance than Random Forest.
+   -  Both models struggle to distinguish between "Oligodendroglioma" and "Astrocytoma", XGBoost shows slightly better performance than Random Forest.
+   - Models are evaluated using 5-fold cross-validation utilizing F-1, accuracy, AUC-ROC scores, and confusion matrices.
    - Feature importance is plotted for both models.
 
 3. **Feature Selection**:
