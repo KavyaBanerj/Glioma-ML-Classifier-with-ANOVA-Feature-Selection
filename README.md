@@ -38,19 +38,20 @@ The project is organized into several directories:
    - Label distributions are checked to ensure class balance.
 
 2. **Model Training and Evaluation**:
+   - **Logistic Regression:** A logistic regression model was added as a baseline to compare against Random Forest and XGBoost classifiers.
    - **Random Forest**: A Random Forest classifier is trained, and feature importance is visualized.
    - **XGBoost Classifier**: An XGBoost model is also trained, showing slightly better performance than Random Forest.
-   -  Both models struggle to distinguish between "Oligodendroglioma" and "Astrocytoma", XGBoost shows slightly better performance than Random Forest.
+   - Both models struggle to distinguish between "Oligodendroglioma" and "Astrocytoma", XGBoost shows slightly better performance than Random Forest.
    - Models are evaluated using 5-fold cross-validation utilizing F-1, accuracy, AUC-ROC scores, and confusion matrices.
    - Feature importance is plotted for both models.
 
-3. **Feature Selection**:
+4. **Feature Selection**:
    - Non-parametric ANOVA-based feature selection is used to reduce the dimensionality of the data before training the models.
 
-4. **Saving Models**:
+5. **Saving Models**:
    - The trained XGBoost model and scaler are saved as `.pkl` files for later use.
    - 
-5. **Survival Analysis**:
+6. **Survival Analysis**:
    - **survival_analysis.ipynb** focuses on analyzing the impact of various biomarkers on patient survival.
    - **Cox Proportional Hazards Model** assesses how different biomarkers influence survival rates.
    - The analysis helps identify significant biomarkers correlated with longer or shorter survival in glioma patients.
